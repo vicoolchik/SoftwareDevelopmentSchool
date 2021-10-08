@@ -4,47 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Polynomial
+/*
+ First task 
+ < today is a
+ wonderful day < I'm learning a new programming
+ language < hello world > and I'm happy > the sun
+ is shining >
+*/
+
+/*
+ Third task
+ Root folder - WebServers  | File name - myfile
+ */
+namespace Task5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            /*
-Console.Write("Enter the maximum order of the polynomial - ");
-int m1 = int.Parse(Console.ReadLine());
-Polynomial p1 = new Polynomial(m1+1);
-p1.AppendPolynom();
-Console.WriteLine(p1.ToString());
-
-Console.Write("Enter the maximum order of the polynomial - ");
-int m2 = int.Parse(Console.ReadLine());
-Polynomial p2 = new Polynomial(m2+1);
-p2.AppendPolynom();
-Console.WriteLine(p2.ToString());
-p1.Addition(p2);
-Console.WriteLine(p1.ToString());
-p1.Subtraction(p2);
-Console.WriteLine(p1.ToString());
-
-Polynomial p3 = new Polynomial(3);
-p3.AppendPolynom();
-p1.Multiplication(p3);
-Console.WriteLine(p1.ToString());
-
-*/
-            Polynomial p1 = new Polynomial();
-            Console.WriteLine(p1.ToString());
-            Polynomial p2 = new Polynomial();
-            Console.WriteLine(p2.ToString());
-            p1.Addition(p2);
-            Console.WriteLine(p1.ToString());
-            p1.Subtraction(p2);
-            Console.WriteLine(p1.ToString());
-            Polynomial p3= new Polynomial();
-            Console.WriteLine(p3.ToString());
-            p1.Multiplication(p3);
-            Console.WriteLine(p1.ToString());
+            // First task 
+            string text = "# today is a\n wonderful day # I'm learning a new programming\n language # hello world # and I'm happy # the sun\n is shining #";
+            WorkWithText1 t1 = new WorkWithText1(text);
+            Console.WriteLine(t1);
+            // Third task
+            string text3 = @"c: \WebServers \home \testsite \www \myfile.txt";
+            WorkWithText3 t3 = new WorkWithText3(text3);
+            Console.WriteLine(t3);
         }
     }
 }
